@@ -417,5 +417,14 @@
     <footer>
         © Dan Terje Norli 2025
     </footer>
+    <!-- Google reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LcpcCcrAAAAALtS1A1Kips9DxYW3-El3z-ZwdrH"></script>
+<script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LcpcCcrAAAAALtS1A1Kips9DxYW3-El3z-ZwdrH', {action: 'cv'}).then(function(token) {
+      console.log('reCAPTCHA Token (cv.html):', token);
+    });
+  });
+</script>
 </body>
 </html>
